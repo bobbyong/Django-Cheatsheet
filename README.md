@@ -13,6 +13,7 @@ Start Project:
 	
 	django-admin.py startproject <projectname>
 
+
 Run Server:  
 	
 	python manage.py runserver
@@ -29,6 +30,12 @@ Declare Required Python Modules:
 
 	pip freeze > requirements.txt
 
+Code to Enable Local Path Discovery (include these in settings.py):
+
+	import os
+
+	SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
+
 
 ===
 Git
@@ -41,6 +48,8 @@ To list git commands:
 To get specific help on a command (e.g. checkout)
 	
 	git checkout --help
+
+**Remote**
 
 Check Git Remote:  
 	
@@ -55,16 +64,6 @@ Add New Remote:
 Remove Git Remote:  
 	
 	git remote rm <git name. Example: origin>
-
-Credential Caching Tool on Windows (save typing username & password)
-
-https://github.com/blog/1104-credential-caching-for-wrist-friendly-git-usage
-
-Graphical Repository Viewer
-
-	gtk
-
-From there you can open git-gui (for some reason git-gui as a standalone command isn't working for me)
 
 **Branching**
 
@@ -101,7 +100,16 @@ Which, if there's a lot going on, could mean that it gets committed to master no
 the other branch called "newFeature".
 However if you're on branch "newFeature", commit the changes, then switch to master and run "ls" you won't see newfile.txt (*yay*), meaning you can't accidentally commit it to the master branch.
 
-**/Branching**
+**Others**
+
+Credential Caching Tool on Windows (save typing username & password):
+https://github.com/blog/1104-credential-caching-for-wrist-friendly-git-usage
+
+Graphical Repository Viewer
+
+	gtk
+
+From there you can open git-gui (for some reason git-gui as a standalone command isn't working for me)
 
 To show commit history:
 	
@@ -110,7 +118,6 @@ To show commit history:
 To move back 1 commit:
 	
 	git reset --hard HEAD@{1}
-
 
 Or to move back to a previous commit type reflog - check the hash next to the commit you want then type
 	
