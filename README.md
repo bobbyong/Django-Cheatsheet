@@ -193,3 +193,13 @@ PostgreSQL
 
 Step-by-Step Tutorial:  
 http://bobbyong.com/blog/installing-postgresql-on-windoes/
+
+Change PostgreSQL Root User Password:
+
+	psql
+	Password: (oldpassword)
+
+	ALTER USER postgres WITH PASSWORD 'newpassword';
+
+	psql
+	Password: (newpassword)
