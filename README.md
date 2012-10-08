@@ -49,6 +49,32 @@ To get specific help on a command (e.g. checkout)
 	
 	git checkout --help
 
+**Basic Git**
+
+Check status:
+	
+	git status
+
+Add files:
+
+	git add .
+
+Remove files:
+	
+	git rm <file path eg: templates/index.html>
+
+Commit files:
+	
+	git commit -m "Commit Message"
+
+Push to remote:
+
+	git push <remote name> <branch name>
+
+Pull from remote:
+
+	git pull <remote name> <branch name>
+
 **Remote**
 
 Check Git Remote:  
