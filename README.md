@@ -30,11 +30,25 @@ Declare Required Python Modules:
 
 	pip freeze > requirements.txt
 
-Code to Enable Local Path Discovery (include these in settings.py):
+**Django Boilerplates**
+
+Code to Enable Local Path Discovery (include in settings.py):
 
 	import os
 
 	SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
+
+RequestContext for Correct User Authentication in Templates (include in an app's views.py):
+Detailed Write-up: http://bobbyong.com/blog/simple-newbie-django-requestcontext-mistake/
+
+	from django.template import RequestContext
+	
+	def my_view(request):
+		# View code here…
+		return render_to_response(‘my_template.html’, 
+									{'dictionary key 1': dictionary value 1,
+										'dictionary key 2': dictionary value 2,}, 
+									context_instance=RequestContext(request))
 
 
 ===
