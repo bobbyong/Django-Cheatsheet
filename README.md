@@ -50,6 +50,15 @@ Detailed Write-up: http://bobbyong.com/blog/simple-newbie-django-requestcontext-
 										'dictionary key 2': dictionary value 2,}, 
 									context_instance=RequestContext(request))
 
+Properly Display Database Objects as Unicode (include in models.py - example below):
+
+	class Blog(models.Model):
+	    name = models.CharField(max_length=100)
+	    tagline = models.TextField()
+
+	    def __unicode__(self):
+	        return self.name
+
 
 ===
 Git
