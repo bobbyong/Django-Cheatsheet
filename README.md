@@ -184,6 +184,10 @@ Run One-off Heroku Commands:
 	
 	heroku run <subsequent commands. Example: python manage.py syncdb>
 
+Run One-off Heroku Commands when There are Multiple Heroku Apps:
+
+	heroku run python manage.py syncdb --remote <Heroku remote name (not Heroku app name). Example: production>
+
 Check State of Dynos:   
 	
 	heroku ps
