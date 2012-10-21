@@ -162,7 +162,7 @@ From there you can open git-gui (for some reason git-gui as a standalone command
 
 To show commit history:
 	
-	git log & git reflog (try both to see differences)
+	git log & git reflog (reflog shows checkouts)
 
 To move back 1 commit:
 	
