@@ -149,6 +149,16 @@ Which, if there's a lot going on, could mean that it gets committed to master no
 the other branch called "newFeature".
 However if you're on branch "newFeature", commit the changes, then switch to master and run "ls" you won't see newfile.txt (*yay*), meaning you can't accidentally commit it to the master branch.
 
+**Checkout**
+
+To revert a file from modified to latest commit version (original)
+
+	git checkout -- <filename>
+
+To discard changes for the entire working copy
+
+	git checkout -- .
+
 **Others**
 
 Credential Caching Tool on Windows (save typing username & password):
