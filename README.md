@@ -155,9 +155,13 @@ To revert a file from modified to latest commit version (original)
 
 	git checkout -- <filename>
 
-To discard changes for the entire working copy
+To discard changes for everything below the current working directory
 
 	git checkout -- .
+
+To discard changes for everything
+
+	git checkout HEAD
 
 **Others**
 
