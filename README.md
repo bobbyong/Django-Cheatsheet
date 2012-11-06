@@ -193,6 +193,7 @@ Check State of Dynos:
 	heroku ps
 
 Rollback a Bad Commit:
+
 	heroku rollback
 
 Review Logs:  
