@@ -140,6 +140,14 @@ To push to a new branch called "newFeature" (assuming your remote is named origi
 
 	git push origin newFeature
 
+To rename a branch
+
+	git branch -m <old branch name> <new branch name>
+
+To delete a branch
+
+	git branch -d <branch name>
+
 Additionally that will create the remote branch if it doesn't already exist
 
 Generally commit files to the branch you're working on before switching otherwise it gets confusing.
@@ -218,6 +226,9 @@ Open App on Browser:
 	
 	heroku open
 
+To push a local branch other than master to Heroku master branch:
+
+	git push heroku <local branch name>:master
 
 =====
 South
@@ -262,8 +273,11 @@ http://bobbyong.com/blog/step-by-step-guide-on-configuring-django-userena/
 PostgreSQL
 ==========
 
-Step-by-Step Tutorial:  
+Step-by-Step Tutorial on Installing PostgreSQL on Windows:  
 http://bobbyong.com/blog/installing-postgresql-on-windoes/
+
+Create Database:
+	createdb <database name>
 
 Change PostgreSQL Root User Password:
 
