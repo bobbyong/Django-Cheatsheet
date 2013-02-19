@@ -151,6 +151,7 @@ To delete a branch
 To merge a branch 'bugFix' into a single sequential commit under 'master'
 
 	git rebase master --> merges branch bugFix into a single line of commit
+	
 	git rebase bugFix --> brings master onto the latest version 
 
 Additionally that will create the remote branch if it doesn't already exist
@@ -179,9 +180,11 @@ To discard changes for everything
 **Undo Changes**
 
 Undo a local commit as if it never happens
+
 	git reset HEAD~1
 
 Create a new commit that essentially reverses all the changes of the previous commit (for remote uses)
+
 	git revert HEAD 
 
 **Others**
