@@ -148,6 +148,11 @@ To delete a branch
 
 	git branch -d <branch name>
 
+To merge a branch 'bugFix' into a single sequential commit under 'master'
+
+	git rebase master --> merges branch bugFix into a single line of commit
+	git rebase bugFix --> brings master onto the latest version 
+
 Additionally that will create the remote branch if it doesn't already exist
 
 Generally commit files to the branch you're working on before switching otherwise it gets confusing.
@@ -170,6 +175,14 @@ To discard changes for everything below the current working directory
 To discard changes for everything
 
 	git checkout HEAD
+
+**Undo Changes**
+
+Undo a local commit as if it never happens
+	git reset HEAD~1
+
+Create a new commit that essentially reverses all the changes of the previous commit (for remote uses)
+	git revert HEAD 
 
 **Others**
 
