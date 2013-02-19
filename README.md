@@ -301,3 +301,13 @@ Change PostgreSQL Root User Password:
 
 	psql
 	Password: (newpassword)
+
+
+======
+Python
+======
+
+Check Python version - enter into python shell by typing "python" then
+
+	import sys
+	sys.version
