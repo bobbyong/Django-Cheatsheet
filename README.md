@@ -90,6 +90,10 @@ Commit files:
 	
 	git commit -m "Commit Message"
 
+Add and commit git changes with a message:
+
+	git commit -am “message here” 
+
 Push to remote:
 
 	git push <remote name> <branch name>
