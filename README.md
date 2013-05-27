@@ -82,6 +82,10 @@ Add files:
 
 	git add .
 
+Add modified tracked files and deleted files to the staging area
+
+	git add -u
+
 Remove files:
 	
 	git rm <file path eg: templates/index.html>
